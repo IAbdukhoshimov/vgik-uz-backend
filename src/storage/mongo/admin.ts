@@ -4,14 +4,16 @@ import AppError from "../../utils/appError";
 
 export class AdminStorage {
     private scope = "storage.admin"
-    async create(payload: IAdmin): Promise<IAdmin> {
-    try {
-        let dbObj = await admin.create(payload)
 
-        return dbObj
-    } catch (error) {
-        logger.error(`${this.scope}.create: finished with error: ${error}`)
-        throw error
+    async findOne(query:Object):Promise<IAdmin |
+     null>{
+        try{
+            let dbobj = await admin.findOne({...query}) 
+            
+            if(!dbobj) throw new Error('Admin not found')
+            return dbobj
+        }catch(error){
+           return null
+        }
     }
-}
 }

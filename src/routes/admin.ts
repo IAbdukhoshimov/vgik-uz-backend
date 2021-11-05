@@ -6,9 +6,6 @@ const  controller = new AdminController()
 
 
 
-router.route("/").post(controller.create)
-router
-    .route("/:id")
-    .post(controller.create)
+router.route("/login").post(controller.adminLogin)
 
 export default router 
