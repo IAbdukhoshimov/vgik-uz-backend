@@ -4,6 +4,7 @@ import TeacherRouter from "./teachers"
 import CategoryRouter from "./category"
 import NewsRouter from "./news"
 import NotificationRouter from "./notification"
+import AdminRouter from "./admin"
 
 const router = Router({mergeParams:true})
 
@@ -12,5 +13,6 @@ router.use("/teachers",TeacherRouter)
 router.use("/category",CategoryRouter)
 router.use("/news",NewsRouter)
 router.use("/notification",NotificationRouter)
+router.use("/admin",AdminRouter)
 
 export default router

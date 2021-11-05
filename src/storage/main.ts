@@ -3,6 +3,7 @@ import {TeacherStorage} from "./mongo/teachers"
 import {CategoryStorage} from "./mongo/catergory"
 import {NewsStorage} from "./mongo/news"
 import {NotificationStorage} from "./mongo/notification"
+import {AdminStorage} from "./mongo/admin"
 
 interface IStorage {
     backround: BackroundStorage
@@ -10,6 +11,7 @@ interface IStorage {
     category:CategoryStorage
     news:NewsStorage
     notification:NotificationStorage
+    admin:AdminStorage
 }
 
 export let storage: IStorage = {
@@ -17,5 +19,6 @@ export let storage: IStorage = {
     teacher: new TeacherStorage(),
     category: new CategoryStorage(),
     news: new NewsStorage(),
-    notification: new NotificationStorage()
+    notification: new NotificationStorage(),
+    admin: new AdminStorage()
 }

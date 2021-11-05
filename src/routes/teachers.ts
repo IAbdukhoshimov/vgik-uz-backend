@@ -3,7 +3,6 @@ import { TeacherController } from "../controllers/teachers";
 
 const router  = Router({mergeParams:true})
 const  controller = new TeacherController()
-// const validator = new SmsValidator()
 
 router.route("/").get(controller.getAll).post(controller.create)
 router

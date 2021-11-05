@@ -3,7 +3,7 @@ import { NewsController } from "../controllers/news";
 
 const router  = Router({mergeParams:true})
 const  controller = new NewsController()
-// const validator = new SmsValidator()
+
 
 router.route("/").get(controller.getAll).post(controller.create)
 router

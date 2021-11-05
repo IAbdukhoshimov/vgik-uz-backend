@@ -3,7 +3,6 @@ import { CategoryController } from "../controllers/category";
 
 const router  = Router({mergeParams:true})
 const  controller = new CategoryController()
-// const validator = new SmsValidator()
 
 router.route("/").get(controller.getAll).post(controller.create)
 router
