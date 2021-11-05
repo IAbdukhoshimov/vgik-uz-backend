@@ -13,10 +13,7 @@ let newsSchema = new mongoose.Schema({
         required:true
     },
     photo:{
-        type:{
-            data:Buffer,
-            contentType:String
-        }
+        type:String
     },
     description:{
         type:String,

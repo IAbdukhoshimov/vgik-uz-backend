@@ -14,10 +14,7 @@ let teacherSchema = new mongoose.Schema({
         required:true
     },
     photo:{
-        type:{
-            data:Buffer,
-            contentType:String
-        }
+        type:String
     },
     title:{
         type:String

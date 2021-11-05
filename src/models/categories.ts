@@ -15,10 +15,7 @@ let categorySchema = new mongoose.Schema({
         type:String,
     },
     photo:{
-        type:{
-            data:Buffer,
-            contentType:String
-        }
+       type:String
     },
     text1:{
         type:String

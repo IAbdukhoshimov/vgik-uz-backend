@@ -11,10 +11,7 @@ let backroundSchema = new mongoose.Schema({
         type:String
     },
     photo:{
-        type:{
-            data:Buffer,
-            contentType:String
-        }
+        type:String
     }
 })
 
