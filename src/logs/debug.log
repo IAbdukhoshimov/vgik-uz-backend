@@ -1,0 +1,525 @@
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-25T07:42:33.085Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-25T07:42:33.097Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-25T07:42:33.097Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-25T07:42:33.138Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-25T08:04:33.245Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-25T08:04:33.256Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-25T08:04:33.257Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-25T08:04:33.273Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-25T11:24:38.327Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-25T11:24:38.336Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-25T11:24:38.337Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-25T11:24:38.344Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-25T11:26:00.421Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-25T11:26:00.429Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-25T11:26:00.430Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-25T11:26:00.436Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-26T04:41:47.710Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-26T04:41:47.720Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-26T04:41:47.721Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-26T04:41:47.753Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-26T04:46:49.609Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-26T04:46:49.617Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-26T04:46:49.618Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-26T04:46:49.633Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.create: finished with error: ValidationError: photo: Cast to Embedded failed for value "it is photo" (type string) at path "photo"',
+  level: 'error',
+  timestamp: '2021-10-26T04:53:01.693Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.create: finished with error: ValidationError: photo: Cast to Embedded failed for value "it is photo" (type string) at path "photo"',
+  level: 'error',
+  timestamp: '2021-10-26T04:53:39.332Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:00.256Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:00.257Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:04.141Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:04.141Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:05.336Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:05.336Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:14.626Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:14.627Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:15.577Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:15.578Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:16.259Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:16.259Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete failed to findByIdAndDelete',
+  level: 'warn',
+  timestamp: '2021-10-26T04:56:37.479Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.delete: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T04:56:37.480Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.get failed to findOne',
+  level: 'warn',
+  timestamp: '2021-10-26T05:02:04.042Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'storage.news.findOne: finished with error: Error: Db object is not found',
+  level: 'error',
+  timestamp: '2021-10-26T05:02:04.042Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-26T14:35:39.774Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-26T14:35:39.783Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-26T14:35:39.783Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-26T14:35:39.802Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-27T04:44:46.434Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-27T04:44:46.444Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-27T04:44:46.445Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-27T04:44:46.470Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb://localhost:27017/vgik',
+  level: 'info',
+  timestamp: '2021-10-27T05:40:56.504Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-27T05:40:56.515Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-27T05:40:56.516Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-27T05:40:56.539Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb+srv://ikhtiyar:ikhtiyar9207@cluster0.4gwl4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  level: 'info',
+  timestamp: '2021-10-27T06:35:13.431Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-10-27T06:35:13.439Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 5000',
+  level: 'info',
+  timestamp: '2021-10-27T06:35:13.439Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-10-27T06:35:17.473Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb+srv://ikhtiyar:ikhtiyar9207@cluster0.4gwl4.mongodb.net/vgik?retryWrites=true&w=majority',
+  level: 'info',
+  timestamp: '2021-11-05T14:00:22.350Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb+srv://ikhtiyar:ikhtiyar9207@cluster0.4gwl4.mongodb.net/vgik?retryWrites=true&w=majority',
+  level: 'info',
+  timestamp: '2021-11-05T14:39:44.615Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-11-05T14:39:44.625Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 8080',
+  level: 'info',
+  timestamp: '2021-11-05T14:39:44.626Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-11-05T14:39:46.951Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb+srv://ikhtiyar:ikhtiyar9207@cluster0.4gwl4.mongodb.net/vgik?retryWrites=true&w=majority',
+  level: 'info',
+  timestamp: '2021-11-05T15:54:59.933Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-11-05T15:54:59.940Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 8080',
+  level: 'info',
+  timestamp: '2021-11-05T15:54:59.941Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-11-05T15:55:02.102Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb+srv://ikhtiyar:ikhtiyar9207@cluster0.4gwl4.mongodb.net/vgik?retryWrites=true&w=majority',
+  level: 'info',
+  timestamp: '2021-11-05T16:48:47.291Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-11-05T16:48:47.302Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 8080',
+  level: 'info',
+  timestamp: '2021-11-05T16:48:47.303Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-11-05T16:48:49.533Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: DATABASE URL: mongodb+srv://ikhtiyar:ikhtiyar9207@cluster0.4gwl4.mongodb.net/vgik?retryWrites=true&w=majority',
+  level: 'info',
+  timestamp: '2021-11-05T16:49:42.838Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Database connection initialized.',
+  level: 'info',
+  timestamp: '2021-11-05T16:49:42.844Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'INDEX: Server is running on port: 8080',
+  level: 'info',
+  timestamp: '2021-11-05T16:49:42.845Z',
+  label: 'vgik',
+  metadata: {}
+}
+{
+  message: 'DB: mongo db connection is established',
+  level: 'info',
+  timestamp: '2021-11-05T16:49:44.608Z',
+  label: 'vgik',
+  metadata: {}
+}
