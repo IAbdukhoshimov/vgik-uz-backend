@@ -9,7 +9,6 @@ export interface ICategory extends Document{
     text3:string
 }
 
-
 let categorySchema = new mongoose.Schema({
     name:{
         type:String,

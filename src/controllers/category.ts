@@ -37,7 +37,7 @@ export class CategoryController{
             }
         })
     })
-// 
+
     create = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
         const category = await storage.category.create({...req.body, photo:req.file?.filename})
 
