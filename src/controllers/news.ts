@@ -39,12 +39,14 @@ export class NewsController{
     })
 
     create = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const news = await storage.news.create(req.body)
+        const category = await storage.category.create({...req.body, photo:req.file?.filename})
 
+        console.log(req.file)
+        console.log(req.body)
         res.status(201).json({
             success:true,
             data:{
-                news
+                category
             }
         })
     })

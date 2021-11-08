@@ -39,15 +39,18 @@ export class NotificationController{
     })
 
     create = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const notification = await storage.notification.create(req.body)
+        const category = await storage.category.create({...req.body, photo:req.file?.filename})
 
+        console.log(req.file)
+        console.log(req.body)
         res.status(201).json({
             success:true,
             data:{
-                notification
+                category
             }
         })
     })
+
 
     update = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
         const notification = await storage.notification.update(req.params.id,req.body)

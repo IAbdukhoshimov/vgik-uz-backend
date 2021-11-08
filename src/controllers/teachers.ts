@@ -39,15 +39,18 @@ export class TeacherController{
     })
 
     create = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const teacher = await storage.teacher.create(req.body)
+        const category = await storage.category.create({...req.body, photo:req.file?.filename})
 
+        console.log(req.file)
+        console.log(req.body)
         res.status(201).json({
             success:true,
             data:{
-                teacher
+                category
             }
         })
     })
+
 
     update = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
         const teacher = await storage.teacher.update(req.params.id,req.body)

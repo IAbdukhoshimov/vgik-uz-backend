@@ -35,12 +35,12 @@ const upload = multer({
 })
 const router = Router({mergeParams:true})
 
-router.use("/backround",BackroundRouter)
-router.use("/teachers",TeacherRouter)
+router.use("/backround",upload.single("image"),BackroundRouter)
+router.use("/teachers",upload.single("image"),TeacherRouter)
 router.use("/category",upload.single('image'),CategoryRouter)
 router.use("/abiturent",upload.single('doc'),AbiturentRouter)
-router.use("/news",NewsRouter)
-router.use("/gallery",GalleryRouter)
+router.use("/news",upload.single("imgage"),NewsRouter)
+router.use("/gallery",upload.single("image"),GalleryRouter)
 router.use("/notification",NotificationRouter)
 router.use("/admin",AdminRouter)
 
