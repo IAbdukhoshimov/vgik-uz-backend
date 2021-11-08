@@ -5,7 +5,8 @@ import {NewsStorage} from "./mongo/news"
 import {NotificationStorage} from "./mongo/notification"
 import {AdminStorage} from "./mongo/admin"
 import {AbiturentStorage} from "./mongo/abiturent"
- 
+import {GalleryStorage} from "./mongo/gallery"
+
 interface IStorage {
     backround: BackroundStorage
     teacher:TeacherStorage
@@ -14,6 +15,7 @@ interface IStorage {
     notification:NotificationStorage
     admin:AdminStorage
     abiturent:AbiturentStorage
+    gallery:GalleryStorage
 }
 
 export let storage: IStorage = {
@@ -23,5 +25,6 @@ export let storage: IStorage = {
     news: new NewsStorage(),
     notification: new NotificationStorage(),
     admin: new AdminStorage(),
-    abiturent:new AbiturentStorage()
+    abiturent:new AbiturentStorage(),
+    gallery:new GalleryStorage()
 }
