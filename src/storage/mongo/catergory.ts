@@ -55,6 +55,7 @@ export class CategoryStorage implements CategoryRepo{
 
             return dbObj
         } catch (error) {
+            console.log(error)
             logger.error(`${this.scope}.create: finished with error: ${error}`)
             throw error
         }
