@@ -14,16 +14,16 @@ let categorySchema = new mongoose.Schema({
         type:String,
     },
     photo:{
-       type:String
+       type:String,
     },
     text1:{
-        type:String
+        type:String,
     },
     text2:{
-        type:String
+        type:String,
     },
     text3:{
-        type:String
+        type:String,
     }
 })
 

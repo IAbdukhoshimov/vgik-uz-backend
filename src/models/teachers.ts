@@ -5,7 +5,6 @@ export interface ITeacher extends Document{
     name:string
     photo:string
     title:string
-    rating:number
 }
 
 let teacherSchema = new mongoose.Schema({
@@ -19,10 +18,6 @@ let teacherSchema = new mongoose.Schema({
     title:{
         type:String
     },
-    rating:{
-        type:Number,
-        required:true
-    }
 })
 
 export default mongoose.model<ITeacher>("Teacher",teacherSchema)
