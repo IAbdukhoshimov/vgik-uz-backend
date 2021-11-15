@@ -6,47 +6,47 @@ import catchAsync from "../utils/catchAsync";
 
 export class TeacherController{
     getAll= catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const category = await storage.category.find(req.query)
+        const teacher = await storage.teacher.find(req.query)
 
         res.status(200).json({
             success:true,
             data:{
-                category
+                teacher
             }
         })
     })
 
     getOne = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const category = await storage.category.findOne(req.body)
+        const teacher = await storage.teacher.findOne(req.body)
 
         res.status(200).json({
             success:true,
             data:{
-                category
+                teacher
             }
         })
     })
 
     create = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const category = await storage.category.create({...req.body, photo:req.file?.filename})
+        const teacher = await storage.teacher.create({...req.body, photo:req.file?.filename})
 
         res.status(201).json({
             success:true,
             data:{
-                category
+                teacher
             }
         })
     })
 
     delete = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const category = await storage.category.delete(req.params.id)
-            if(!category){
+        const teacher = await storage.teacher.delete(req.params.id)
+            if(!teacher){
                 return "not found in database"
             }
             res.status(200).json({
                 success:true,
                 data:{
-                    category
+                    teacher
                 }
             })
         })
