@@ -16,17 +16,6 @@ export class TeacherController{
         })
     })
 
-    get = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const category = await storage.category.findById(req.params.id)
-
-        res.status(200).json({
-            success:true,
-            data:{
-                category
-            }
-        })
-    })
-
     getOne = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
         const category = await storage.category.findOne(req.body)
 
@@ -42,17 +31,6 @@ export class TeacherController{
         const category = await storage.category.create({...req.body, photo:req.file?.filename})
 
         res.status(201).json({
-            success:true,
-            data:{
-                category
-            }
-        })
-    })
-
-    update = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const category = await storage.category.update(req.params.id,req.body)
-
-        res.status(200).json({
             success:true,
             data:{
                 category

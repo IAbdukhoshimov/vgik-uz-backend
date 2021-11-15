@@ -3,7 +3,6 @@ import BackroundRouter from "./backround";
 import TeacherRouter from "./teachers"
 import CategoryRouter from "./category"
 import NewsRouter from "./news"
-import NotificationRouter from "./notification"
 import AdminRouter from "./admin"
 import AbiturentRouter from "./abiturent"
 import GalleryRouter from "./gallery"
@@ -42,7 +41,6 @@ router.use("/category", upload.single('photo'),CategoryRouter)
 router.use("/abiturent", upload.single('docx'),AbiturentRouter)
 router.use("/news", upload.single("photo"),NewsRouter)
 router.use("/gallery", upload.single("photo"),GalleryRouter)
-router.use("/notification", NotificationRouter)
 router.use("/admin", AdminRouter)
 
 export default router

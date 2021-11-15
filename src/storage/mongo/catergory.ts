@@ -33,22 +33,6 @@ export class CategoryStorage implements CategoryRepo{
         }
     }
 
-    async findById(id: string): Promise<ICategory> {
-        try {
-            let dbObj = await Category.findById(id)
-
-            if (!dbObj) {
-                logger.warn(`${this.scope}.get failed to findOne`)
-                throw new AppError(404, "Db object is not found")
-            }
-
-            return dbObj
-        } catch (error) {
-            logger.error(`${this.scope}.findOne: finished with error: ${error}`)
-            throw error
-        }
-    }
-
     async create(payload: ICategory): Promise<ICategory> {
         try {
             let dbObj = await Category.create(payload)
@@ -57,24 +41,6 @@ export class CategoryStorage implements CategoryRepo{
         } catch (error) {
             console.log(error)
             logger.error(`${this.scope}.create: finished with error: ${error}`)
-            throw error
-        }
-    }
-
-    async update(id: string, payload: ICategory): Promise<ICategory> {
-        try {
-            let dbObj = await Category.findByIdAndUpdate(id, payload, {
-                new: true
-            })
-
-            if (!dbObj) {
-                logger.warn(`${this.scope}.update failed to findByIdAndUpdate`)
-                throw new AppError(404, "Db object is not found")
-            }
-
-            return dbObj
-        } catch (error) {
-            logger.error(`${this.scope}.update: finished with error: ${error}`)
             throw error
         }
     }
