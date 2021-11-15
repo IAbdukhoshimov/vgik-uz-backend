@@ -22,7 +22,7 @@ let config: Config = {
     MongoPassword: getConf("MONGO_PASSWORD", ""),
     MongoDbAtlasURI:getConf("MONGODB_URI",""),
     MongoUser: getConf("MONGO_USER", ""),
-    NodeEnv: getConf("NODE_ENV", "production"),
+    NodeEnv: getConf("NODE_ENV", "development"),
     MongoAuthDisable: false
 }
 
