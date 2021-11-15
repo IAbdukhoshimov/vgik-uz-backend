@@ -21,7 +21,6 @@ const storage = multer.diskStorage({
     }
 })
 
-
 const upload = multer({
     storage: storage,
     limits: {
@@ -37,13 +36,13 @@ const upload = multer({
 })
 const router = Router({mergeParams:true})
 
-router.use("/backround",upload.single("photo"),BackroundRouter)
-router.use("/teachers",upload.single("photo"),TeacherRouter)
-router.use("/category",upload.single('photo'),CategoryRouter)
-router.use("/abiturent",upload.single('docx'),AbiturentRouter)
-router.use("/news",upload.single("photo"),NewsRouter)
-router.use("/gallery",upload.single("photo"),GalleryRouter)
-router.use("/notification",NotificationRouter)
-router.use("/admin",AdminRouter)
+router.use("/backround", upload.single("photo"),BackroundRouter)
+router.use("/teachers", upload.single("photo"),TeacherRouter)
+router.use("/category", upload.single('photo'),CategoryRouter)
+router.use("/abiturent", upload.single('docx'),AbiturentRouter)
+router.use("/news", upload.single("photo"),NewsRouter)
+router.use("/gallery", upload.single("photo"),GalleryRouter)
+router.use("/notification", NotificationRouter)
+router.use("/admin", AdminRouter)
 
 export default router

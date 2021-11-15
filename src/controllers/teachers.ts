@@ -6,34 +6,34 @@ import catchAsync from "../utils/catchAsync";
 
 export class TeacherController{
     getAll= catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const teacher = await storage.teacher.find(req.query)
+        const category = await storage.category.find(req.query)
 
         res.status(200).json({
             success:true,
             data:{
-                teacher
+                category
             }
         })
     })
 
     get = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const teachers = await storage.teacher.findById(req.params.id)
+        const category = await storage.category.findById(req.params.id)
 
         res.status(200).json({
             success:true,
             data:{
-                teachers
+                category
             }
         })
     })
 
     getOne = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const teacher = await storage.teacher.findOne(req.body)
+        const category = await storage.category.findOne(req.body)
 
         res.status(200).json({
             success:true,
             data:{
-                teacher
+                category
             }
         })
     })
@@ -49,27 +49,26 @@ export class TeacherController{
         })
     })
 
-
     update = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const teacher = await storage.teacher.update(req.params.id,req.body)
+        const category = await storage.category.update(req.params.id,req.body)
 
         res.status(200).json({
             success:true,
             data:{
-                teacher
+                category
             }
         })
     })
 
     delete = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const teacher = await storage.teacher.delete(req.params.id)
-            if(!teacher){
+        const category = await storage.category.delete(req.params.id)
+            if(!category){
                 return "not found in database"
             }
             res.status(200).json({
                 success:true,
                 data:{
-                    teacher
+                    category
                 }
             })
         })
