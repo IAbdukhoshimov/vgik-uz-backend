@@ -10,6 +10,7 @@ import GalleryRouter from "./gallery"
 import multer from "multer"
 import path from "path"
 
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, path.join(__dirname, '../', 'assets/'))
@@ -20,6 +21,7 @@ const storage = multer.diskStorage({
     }
 })
 
+
 const upload = multer({
     storage: storage,
     limits: {
@@ -28,7 +30,7 @@ const upload = multer({
     fileFilter: function (req, file, callback) {
         var ext = path.extname(file.originalname);
         if (ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg' && ext!==".docx" && ext!=='.doc') {
-            return callback(new Error('Only images  and docs are allowed'))
+            return callback(new Error('Only images  and docx are allowed'))
         }
         callback(null, true)
     },

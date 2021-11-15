@@ -3,14 +3,18 @@ import mongoose,{Schema, Document} from "mongoose"
 export interface iAbiturent extends Document{
     id:string
     title:string
-    photo:string
+    docx:string
+    text:string
 }
 
 let abiturentSchema = new mongoose.Schema({
     title:{
         type:String
     },
-    photo:{
+    docx:{
+        type:String
+    },
+    text:{
         type:String
     }
 })

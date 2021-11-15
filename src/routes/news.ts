@@ -4,7 +4,6 @@ import { NewsController } from "../controllers/news";
 const router  = Router({mergeParams:true})
 const  controller = new NewsController()
 
-
 router.route("/").get(controller.getAll).post(controller.create)
 router
     .route("/:id")
