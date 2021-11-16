@@ -1,15 +1,13 @@
-import { iAbiturent } from "../../models/abiturent"; 
+import { IAbiturent } from "../../models/abiturent"; 
 
 export interface IAbiturentAllResponse {
-    payload:iAbiturent[]
+    payload:IAbiturent[]
     count: number
 }
 
 export interface AbiturentRepo {
-    create(payload:iAbiturent):Promise<iAbiturent>
-    update(id:string,payload:iAbiturent):Promise<iAbiturent>
+    create(payload:IAbiturent):Promise<IAbiturent>
     delete(id:string):Promise<any>
-    find(query:Object):Promise<iAbiturent[]>
-    findOne(query:Object):Promise<iAbiturent>
-    findById(id:string):Promise<iAbiturent>
+    find(query:Object):Promise<IAbiturent[]>
+    findOne(query:Object):Promise<IAbiturent>
 }

@@ -1,6 +1,6 @@
 import mongoose,{Schema, Document} from "mongoose"
 
-export interface iAbiturent extends Document{
+export interface IAbiturent extends Document{
     id:string
     title:string
     docx:string
@@ -19,4 +19,4 @@ let abiturentSchema = new mongoose.Schema({
     }
 })
 
-export default mongoose.model<iAbiturent>("Abiturent",abiturentSchema)
+export default mongoose.model<IAbiturent>("Abiturent",abiturentSchema)

@@ -33,22 +33,6 @@ export class TeacherStorage implements TeacherRepo{
         }
     }
 
-    async findById(id: string): Promise<ITeacher> {
-        try {
-            let dbObj = await Teacher.findById(id)
-
-            if (!dbObj) {
-                logger.warn(`${this.scope}.get failed to findOne`)
-                throw new AppError(404, "Db object is not found")
-            }
-
-            return dbObj
-        } catch (error) {
-            logger.error(`${this.scope}.findOne: finished with error: ${error}`)
-            throw error
-        }
-    }
-
     async create(payload: ITeacher): Promise<ITeacher> {
         try {
             let dbObj = await Teacher.create(payload)
@@ -57,24 +41,6 @@ export class TeacherStorage implements TeacherRepo{
         } catch (error) {
             console.log(error)
             logger.error(`${this.scope}.create: finished with error: ${error}`)
-            throw error
-        }
-    }
-
-    async update(id: string, payload: ITeacher): Promise<ITeacher> {
-        try {
-            let dbObj = await Teacher.findByIdAndUpdate(id, payload, {
-                new: true
-            })
-
-            if (!dbObj) {
-                logger.warn(`${this.scope}.update failed to findByIdAndUpdate`)
-                throw new AppError(404, "Db object is not found")
-            }
-
-            return dbObj
-        } catch (error) {
-            logger.error(`${this.scope}.update: finished with error: ${error}`)
             throw error
         }
     }

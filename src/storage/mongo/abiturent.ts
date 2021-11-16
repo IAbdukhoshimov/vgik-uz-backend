@@ -1,12 +1,12 @@
-import { AbiturentRepo } from "../repo/abiturent"
-import Abiturent,{iAbiturent} from "../../models/abiturent"
+import { AbiturentRepo } from "../repo/abiturent";
+import Abiturent,{IAbiturent} from "../../models/abiturent"
 import { logger } from "../../config/logger";
 import AppError from "../../utils/appError";
 
 export class AbiturentStorage implements AbiturentRepo{
     private scope = "storage.abiturent"
 
-    async find(query:Object):Promise<iAbiturent[]>{
+    async find(query:Object):Promise<IAbiturent[]>{
         try{
             let dbobj = await Abiturent.find({...query})
             
@@ -17,18 +17,7 @@ export class AbiturentStorage implements AbiturentRepo{
         }
     }
 
-    async create(query:Object):Promise<iAbiturent>{
-    try{
-        let dbobj = await Abiturent.create({...query})
-        
-        return dbobj
-    }catch(error){
-        logger.error(`${this.scope}.create: finished with error:${error}`)
-        throw error
-    }
-}
-
-    async findOne(query: Object): Promise<iAbiturent> {
+    async findOne(query: Object): Promise<IAbiturent> {
         try {
             let dbObj = await Abiturent.findOne({ ...query })
 
@@ -44,38 +33,14 @@ export class AbiturentStorage implements AbiturentRepo{
         }
     }
 
-    async findById(id: string): Promise<iAbiturent> {
+    async create(payload: IAbiturent): Promise<IAbiturent> {
         try {
-            let dbObj = await Abiturent.findById(id)
-
-            if (!dbObj) {
-                logger.warn(`${this.scope}.get failed to findOne`)
-                throw new AppError(404, "Db object is not found")
-            }
+            let dbObj = await Abiturent.create(payload)
 
             return dbObj
         } catch (error) {
-            logger.error(`${this.scope}.findOne: finished with error: ${error}`)
-            throw error
-        }
-    }
-
-
-
-    async update(id: string, payload: iAbiturent): Promise<iAbiturent> {
-        try {
-            let dbObj = await Abiturent.findByIdAndUpdate(id, payload, {
-                new: true
-            })
-
-            if (!dbObj) {
-                logger.warn(`${this.scope}.update failed to findByIdAndUpdate`)
-                throw new AppError(404, "Db object is not found")
-            }
-
-            return dbObj
-        } catch (error) {
-            logger.error(`${this.scope}.update: finished with error: ${error}`)
+            console.log(error)
+            logger.error(`${this.scope}.create: finished with error: ${error}`)
             throw error
         }
     }

@@ -6,19 +6,9 @@ import catchAsync from "../utils/catchAsync";
 
 export class AbiturentController{
     getAll= catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
+        console.log(req.file)
         const abiturent = await storage.abiturent.find(req.query)
-
-        res.status(200).json({
-            success:true,
-            data:{
-                abiturent
-            }
-        })
-    })
-
-    get = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const abiturent = await storage.abiturent.findById(req.params.id)
-
+        
         res.status(200).json({
             success:true,
             data:{
@@ -42,17 +32,6 @@ export class AbiturentController{
         const abiturent = await storage.abiturent.create({...req.body, photo:req.file?.filename})
 
         res.status(201).json({
-            success:true,
-            data:{
-                abiturent
-            }
-        })
-    })
-
-    update = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const abiturent = await storage.abiturent.update(req.params.id,req.body)
-
-        res.status(200).json({
             success:true,
             data:{
                 abiturent

@@ -7,8 +7,6 @@ const  controller = new AbiturentController()
 router.route("/").get(controller.getAll).post(controller.create)
 router
     .route("/:id")
-    .get(controller.get)
-    .patch(controller.update)
     .delete(controller.delete)
     .post(controller.create)
 
