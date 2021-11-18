@@ -29,7 +29,7 @@ export class AbiturentController{
     })
 
     create = catchAsync(async(req:Request,res:Response,next:NextFunction)=>{
-        const abiturent = await storage.abiturent.create({...req.body, photo:req.file?.filename})
+        const abiturent = await storage.abiturent.create({...req.body, docx:req.file?.filename})
 
         res.status(201).json({
             success:true,
